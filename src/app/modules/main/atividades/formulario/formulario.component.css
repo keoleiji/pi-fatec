@@ -1,0 +1,19 @@
+.nova-data {
+    width: 70%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.novo-titulo, .nova-descricao, .novas-fontes {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    float: right;
+}
+
+@media only screen and (max-width: 1001px) {
+    textarea {
+        height: 100px;
+    }
+}

@@ -1,0 +1,43 @@
+.display-flex {
+    justify-content: center;
+}
+
+h4 {
+    color: var(--cor-primaria);
+    font-family: montserrat-semi-bold;
+    margin-left: 20px;
+}
+
+.div-curso {
+    display: table;
+    min-width: 33%;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    border-radius: 3px;
+    color: var(--cor-terciaria);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1001px) {
+    .div-curso {
+        margin: 20px;
+    }
+    h4 {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .div-curso {
+        margin: 40px;
+    }
+}
+
+.div-curso span {
+    display: table-cell;
+    vertical-align: middle;
+}

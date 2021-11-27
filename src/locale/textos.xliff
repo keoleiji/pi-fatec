@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="a6bc2bbd07cb2cf53745dac690a0b531691b6bc9" datatype="html">
+        <source>Controle de Atividades</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="828ed28c4fbe77e1d878449668d78c9502b24c52" datatype="html">
+        <source>Registro Acadêmico</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7b5d9a66b6a91846c21d186e3f6a2d971f4bacbb" datatype="html">
+        <source>Senha</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0fa1af383ba8984f207997391bc0c15f962eca69" datatype="html">
+        <source>Esqueci a senha</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0a3c3d19159ad535fd3d3de8b5c6170009a0a8e9" datatype="html">
+        <source>Realizar cadastro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e0bb0d8c53b4b1394b6638e0986f828bb18a5ae1" datatype="html">
+        <source>Entrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a599240ae9ecdd4fd5ee41c0844ea55911bc1fd7" datatype="html">
+        <source>Cadastro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="06d0491684a3972bb9ec45b5f05b18ce11488080" datatype="html">
+        <source>Nome</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8ec12bab21ce480386ef01074e607730b3d65bdd" datatype="html">
+        <source>Email Institucional</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ef46f75b427e024197c0350fce78963f3048fb7a" datatype="html">
+        <source>Curso</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71db2c16f93993986f34caab2fcf9df8df75e2be" datatype="html">
+        <source>Finalizar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/login/login.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

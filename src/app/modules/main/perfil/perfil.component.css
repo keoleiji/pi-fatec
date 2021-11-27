@@ -1,0 +1,31 @@
+.div-info {
+    border-radius: 3px;
+    margin: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1001px) {
+    .div-info {
+        width: calc(100% - 30px);
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .div-info {
+        min-width: 350px;
+        max-width: 450px;
+    }
+}
+
+.div-info h4 {
+    color: var(--cor-primaria);
+    font-family: montserrat-semi-bold;
+}
+
+.div-info .form-group {
+    margin: 20px 0;
+}
+
+.div-info .btn {
+    width: 80%;
+}

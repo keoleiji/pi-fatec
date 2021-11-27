@@ -1,0 +1,124 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.tela {
+    overflow: hidden;
+    background: var(--cor-quaternaria);
+}
+
+.operacao {
+    position: absolute;
+    left: 300px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    z-index: 2;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.div-minimize {
+    top: 20px;
+    transition: 0.4s;
+}
+
+.div-config {
+    top: 70px;
+}
+
+.div-logout {
+    top: 120px;
+}
+
+.div-add {
+    top: 170px;
+}
+
+.operacao span {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.sidebar {
+    scrollbar-width: none;
+    position: absolute;
+    width: 320px;
+    height: 100%;
+    background-color: var(--cor-secundaria);
+    color: white;
+    transition: 0.4s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.div-conteudo-sidebar {
+    transition: 0.4s;
+}
+
+.custom-class {
+    margin: 50px 50px auto;
+    user-select: none;
+    font-family: montserrat-regular;
+}
+
+.sidebar h5 {
+    margin: 50px 50px auto;
+    user-select: none;
+    font-family: montserrat-regular;
+}
+
+.sidebar h5 span {
+    cursor: pointer;
+    font-size: 90%;
+    padding: 7px;
+    margin: 5px 2px;
+    transition: 0.4s;
+}
+
+.sidebar h5 span:hover {
+    color: var(--cor-primaria);
+}
+
+.sidebar .div-info {
+    padding: 30px 50px;
+}
+
+.sidebar .div-materias button {
+    width: 95%;
+    margin: 0 2%;
+    border: none;
+    background-color: transparent;
+    padding: 10px 40px;
+    color: white;
+    outline: none;
+    transition: 0.4s;
+    text-align: left;
+}
+
+.sidebar .div-materias button:last-child {
+    color: var(--cor-quaternaria);
+    font-weight: bold;
+    font-family: montserrat-semi-bold;
+    text-align: right;
+}
+
+.sidebar .div-materias button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 320px;
+    height: 100%;
+    transition: 0.4s;
+    width: calc(100% - 320px);
+    padding: 30px;
+    overflow-x: hidden;
+}

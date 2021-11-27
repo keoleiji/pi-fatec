@@ -1,0 +1,46 @@
+h4 {
+    color: var(--cor-primaria);
+    font-family: montserrat-semi-bold;
+    margin-left: 20px;
+}
+
+.accordion {
+    margin: 20px 20px;
+    max-width: 450px;
+}
+
+.accordion .curso-header {
+    padding: 10px;
+    cursor: pointer;
+    background: var(--cor-secundaria);
+}
+
+.accordion .curso-header h2 button {
+    font-size: 15px;
+    color: white;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion .card-body {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.accordion .card-body span {
+    margin-left: 35px;
+}
+
+.accordion .card-body span.material-icons {
+    position: absolute;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.accordion .card-body span.material-icons:hover {
+    color: var(--cor-secundaria);
+}

@@ -1,0 +1,70 @@
+body {
+    --cor-primaria: #a80532;
+    --cor-primaria-opaca: #ffdde6;
+    --cor-secundaria: #333;
+    --cor-terciaria: rgb(252, 252, 252);
+    --cor-quaternaria: rgb(240, 240, 240);
+    --cor-preto-opaco: rgba(0, 0, 0, 0.2);
+    --box-shadow: 2px 2px 2px var(--cor-preto-opaco);
+    font-family: montserrat-light;
+}
+
+@media only scren and (min-width: 1000px) {
+    body {
+        user-select: none;
+    }
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url("../src/assets/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url("../src/assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url("../src/assets/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: montserrat-semi-bold;
+    src: url("../src/assets/fonts/Montserrat-SemiBold.ttf");
+}
+
+.btn-primary, .btn-secondary, .btn-primary:focus, .btn-secondary:focus, input:focus, .btn-primary:active, .btn-secondary:active, textarea:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.btn-primary, .btn-primary:active {
+    background-color: var(--cor-primaria) !important;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid var(--cor-primaria) !important;
+}
+
+.btn-secondary, .btn-secondary:active {
+    background-color: var(--cor-secundaria) !important;
+}
+
+.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: var(--cor-primaria) !important;
+}
+
+.swal2-styled:focus {
+    box-shadow: none !important;
+}
+
+.swal2-title {
+    font-size: 20px !important;
+}

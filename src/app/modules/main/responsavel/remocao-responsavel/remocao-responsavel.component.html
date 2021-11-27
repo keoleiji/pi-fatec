@@ -1,0 +1,16 @@
+<div class="div-remocao-responsavel">
+    <h4>Remover Responsável</h4>
+    <div class="info-responsavel">
+        <div class="campo-responsavel">
+            <span>Responsáveis Cadastrados</span>
+        </div>
+        <div class="campo-responsavel" *ngFor="let responsavel of responsaveis">
+            <div class="icone-remover" (click)="removerResponsavel(responsavel)">
+                <span class="material-icons">delete</span>
+            </div>
+            <div class="span-remover">
+                <span>{{responsavel.nome_usuario}}</span>
+            </div>
+        </div>
+    </div>
+</div>

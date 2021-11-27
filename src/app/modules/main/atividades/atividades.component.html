@@ -1,0 +1,46 @@
+<h4 *ngIf="materia && usuario.matricula_responsavel">Nova atividade de {{materia.nome_materia}}</h4>
+<div class="div-atividade" *ngIf="usuario.matricula_responsavel">
+    <app-formulario [atividade]="atividadeVazia" (resposta)="atualizaAtividades()"></app-formulario>
+    <br><br>
+    <hr>
+</div>
+
+<h4 *ngIf="materia">Atividades de {{materia.nome_materia}} - {{materia.nome_curso}}</h4>
+<div class="div-atividade" *ngFor="let atividade of atividades; let i = index" id="atividade{{i}}">
+
+    <div class="scroll-pagina">
+        <span class="material-icons" (click)="scrollTo('top')">arrow_drop_up</span><br>
+        <span class="material-icons atual" (click)="scrollTo('today')">fiber_manual_record</span><br>
+        <span class="material-icons" (click)="scrollTo('bottom')">arrow_drop_down</span>
+    </div>
+    <hr>
+
+    <div *ngIf="usuario.matricula_responsavel">
+        <span class="material-icons edit" (click)="editarAtividade(atividade, $event)">edit</span>
+        <span *ngIf="!atividade.isEditar" class="material-icons" (click)="deletarAtividade(atividade)">delete</span>
+    </div>
+
+    <app-formulario *ngIf="atividade.isEditar && usuario.matricula_responsavel" [atividade]="atividade" (resposta)="atualizaAtividades()"></app-formulario>
+
+    <div *ngIf="!atividade.isEditar">
+        <h5>{{atividade.data_final_formatada}}</h5>
+        <br><br>
+        <h6>{{atividade.titulo_atividade}}</h6>
+        <span>{{atividade.descricao_atividade}}</span>
+        <div *ngIf="atividade.fontes_atividade.length > 0">
+            <span class="span-fontes">
+                <span class="span-fontes">Fontes: </span>
+                <span *ngFor="let fonte of atividade.fontes_atividade.split(','); let i = index">
+                    <a attr.href="{{fonte}}">{{fonte}}</a>
+                    <span *ngIf="i < atividade.fontes_atividade.split(',').length - 1">, </span>
+                </span>
+            </span>
+        </div>
+        <br *ngIf="atividade.fontes_atividade.length == 0">
+    </div>
+
+    <br>
+
+    <span class="span-autor">Autor: {{atividade.matricula_usuario.nome_usuario}}</span><br>
+    <span class="span-data-cadastrada">Data cadastrada: {{atividade.data_cadastro_formatada}}</span><br>
+</div>

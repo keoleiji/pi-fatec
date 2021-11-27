@@ -1,0 +1,30 @@
+<div class="div-info">
+    <h4>Editar Perfil</h4>
+    <div class="form-group">
+        <input disabled type="text" class="form-control" [value]="matricula">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nome" [(ngModel)]="nome">
+    </div>
+    <div class="form-group">
+        <input disabled type="email" class="form-control" placeholder="E-mail Institucional" [value]="email">
+    </div>
+    <div class="form-group">
+        <select class="form-control" [(ngModel)]="curso">
+            <option value="1">Análise e Desenvolv. de Sistemas</option>
+            <option value="2">Comércio Exterior</option>
+            <option value="3">Gestão Empresarial</option>
+            <option value="4">Redes</option>
+            <option value="5">Logística Aeroportuária</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" placeholder="Senha" [(ngModel)]="senha">
+    </div>
+    <div class="form-group">
+        <input type="password" aria-describedby="senhaHelp" class="form-control" placeholder="Confirmar Senha"
+            [(ngModel)]="confirmacaoSenha">
+        <small id="senhaHelp" class="form-text text-muted">Para não alterar um campo, deixe como está ou em branco.</small>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="alterarInformacoes()">Salvar</button>
+</div>

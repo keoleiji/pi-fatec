@@ -1,0 +1,29 @@
+<div class="background">
+    <ng-container *ngFor="let language of languageList">
+        <a href="/{{language.code}}/">
+            <button class="button">{{language.label}}</button>
+        </a>
+    </ng-container>
+    <div class="div-login">
+        <h4 i18n >Controle de Atividades</h4>
+        <input i18n-placeholder placeholder="Registro Acadêmico" type="number" class="form-control" [(ngModel)]="usuario" />
+        <input i18n-placeholder placeholder="Senha" type="password" class="form-control" [(ngModel)]="senha" (keyup.enter)="login()" />
+        <span (click)="enviarSenhaProvisoria()" i18n >Esqueci a senha</span>
+        &nbsp;|&nbsp;
+        <span (click)="abrirCadastro()" i18n >Realizar cadastro</span>
+        <br>
+        <button class="btn btn-primary" (click)="login()" i18n >Entrar</button>
+    </div>
+    <div class="div-cadastro" style="display: none;">
+        <h4 i18n >Cadastro</h4><span (click)="fecharCadastro()">&times;</span>
+        <input i18n-placeholder placeholder="Registro Acadêmico" type="number" class="form-control" [(ngModel)]="matricula" />
+        <input i18n-placeholder placeholder="Nome" type="text" class="form-control" [(ngModel)]="nome" />
+        <input i18n-placeholder placeholder="Email Institucional" type="email" class="form-control" [(ngModel)]="email" />
+        <select class="form-control" [(ngModel)]="curso">
+            <option disabled value="0" i18n >Curso</option>
+            <option *ngFor="let c of cursos" value="{{c.id_curso}}">{{c.nome_curso}}</option>
+        </select>
+        <br>
+        <button class="btn btn-primary" (click)="finalizarCadastro()" i18n >Finalizar</button>
+    </div>
+</div>

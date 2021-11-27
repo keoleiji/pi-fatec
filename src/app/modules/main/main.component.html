@@ -1,0 +1,43 @@
+<div class="tela">
+    <div class="div-minimize operacao" (click)="resizeSidebar()">
+        <span class="material-icons">keyboard_arrow_left</span>
+    </div>
+    <div class="div-config operacao" (click)="reziseClick()" routerLink="/main/perfil">
+        <span class="material-icons">person</span>
+    </div>
+    <div class="div-logout operacao" (click)="logout()">
+        <span class="material-icons">power_settings_new</span>
+    </div>
+    <div *ngIf="usuario">
+        <div *ngIf="usuario.matricula_responsavel || usuario.matricula_usuario == 1" class="div-add operacao" (click)="reziseClick()" routerLink="/main/responsavel">
+            <span class="material-icons">person_add</span>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="div-conteudo-sidebar">
+            <div *ngIf="usuario">
+                <h5>
+                    <b>
+                        {{usuario.nome_usuario}}
+                    </b>
+                </h5>
+                <div class="div-info">
+                    <p>{{usuario.matricula_usuario}}</p>
+                    <p>{{usuario.id_curso.nome_curso}}</p>
+                </div>
+            </div>
+            <br>
+            <div class="div-materias" *ngIf="aulasVinculadas">
+                <button (click)="reziseClick()"
+                    [routerLink]="['/main/atividades', aula.nome_curso, aula.id_materia.nome_materia, aula.id_aula]"
+                    *ngFor="let aula of aulasVinculadas">{{aula.id_materia.nome_materia}} - {{aula.nome_curso}}</button>
+                <button *ngIf="aulasVinculadas.length == 0">Você ainda não escolheu matérias!</button>
+                <button (click)="reziseClick()" routerLink="/main/cursos"><span>&#x2b;</span> Matéria</button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

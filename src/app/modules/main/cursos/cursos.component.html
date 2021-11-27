@@ -1,0 +1,6 @@
+<h4>Cursos Disponíveis</h4>
+<div class="display-flex">
+    <div class="div-curso" [routerLink]="['/main/materias', curso.id_curso]" *ngFor="let curso of cursos">
+        <span>{{curso.nome_curso}}</span>
+    </div>
+</div>

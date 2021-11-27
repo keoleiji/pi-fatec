@@ -1,0 +1,23 @@
+<div class="div-responsavel">
+    <h4>Novo Responsável</h4>
+    <div class="form-group">
+        <input type="number" placeholder="Matrícula do Aluno" class="form-control" [(ngModel)]="matriculaResponsavel"
+            (keyup)="alteraBotao()">
+    </div>
+    <div class="info-responsavel">
+        <div class="campo-responsavel">
+            <span>{{usuarioResponsavel.nome_usuario}}</span>
+        </div>
+        <div class="campo-responsavel">
+            <span>{{usuarioResponsavel.matricula_usuario}}</span>
+        </div>
+        <div class="campo-responsavel">
+            <span>{{usuarioResponsavel.id_curso.nome_curso}}</span>
+        </div>
+        <div class="campo-responsavel">
+            <span>{{usuarioResponsavel.email_usuario}}</span>
+        </div>
+    </div>
+    <button *ngIf="isPesquisa" type="submit" class="btn btn-primary" (click)="pesquisarAluno()">Pesquisar</button>
+    <button *ngIf="!isPesquisa" type="submit" class="btn btn-primary" (click)="promoverAluno()">Promover</button>
+</div>

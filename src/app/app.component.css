@@ -1,0 +1,20 @@
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+.modal.fade {
+    transition: 0.4s;
+}
+
+#modalError .modal-dialog, #modalSuccess .modal-dialog {
+    max-width: 380px;
+    user-select: none;
+}

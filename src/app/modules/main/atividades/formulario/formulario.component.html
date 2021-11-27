@@ -1,0 +1,6 @@
+<input type="date" placeholder="Data Final" class="form-control nova-data" [(ngModel)]="atividade.data_final" />
+<input type="text" placeholder="Título" class="form-control novo-titulo" [(ngModel)]="atividade.titulo_atividade" />
+<textarea placeholder="Descrição" class="form-control nova-descricao" [(ngModel)]="atividade.descricao_atividade"></textarea>
+<input type="text" placeholder="Fontes (separadas por vírgula)" class="form-control novas-fontes"
+    [(ngModel)]="atividade.fontes_atividade" />
+<button class="btn btn-primary" (click)="verificaProcesso(atividade)">Salvar</button>
